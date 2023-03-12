@@ -1,0 +1,133 @@
+.main_todo{ 
+    position: relative;  
+    height: 280px; 
+    border-radius: 12px;  
+    margin: 5% 10%;
+    .smile{ 
+        position: absolute; 
+        z-index: 2;  
+        width: 40px; 
+        height: 40px;
+        border-radius: 25px; 
+        top: 14px; 
+        right: 14px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        font-size: 18px; 
+        background: rgba(255, 255, 255 , 0.8);
+}    
+.background{ 
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    z-index: 1;  
+    left: 0; 
+    top: 0;
+    img{ 
+        width: 100%; 
+        height: 100%;
+        border-radius: 12px;
+    }
+} 
+.text{ 
+    position: absolute; 
+    bottom: 0; 
+    z-index: 2; 
+    height: 65px;
+    background: rgba(255,  255, 255, 0.9); 
+    border-radius: 12px;  
+    padding: 12px 14px 10px 14px;
+    width: 100%;
+    div{ 
+        width: 100%; 
+        display: flex; 
+        justify-content: space-between;  
+        align-items: center;
+        h4{ 
+            font-size: 18px; 
+            font-weight: 700;
+        } 
+        p{ 
+            font-size: 12px; 
+            font-weight: 300;
+        }
+    } 
+    p{ 
+        font-size: 14px; 
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+} 
+}  
+.main_modal{
+    height: 100vh; 
+    width: 100%; 
+    position: fixed;  
+    z-index: 3;  
+    top: 0;
+     background: none;
+    .modal_opacity{ 
+        height: 100%;
+        width: 100%; 
+  background: rgba(50 ,47, 40, 0.7); 
+  position: absolute; 
+  z-index: 1;
+       
+    } 
+    .modal{ 
+        height: 80vh; 
+        width: 95%; 
+        margin: 0 auto; 
+        background-color: white; 
+        position: absolute; 
+        z-index: 2;  
+        left: 50%;  
+        top: 50%;
+        transform: translate(-50%, -50%); 
+        padding: 0px 0px 60px 40px;
+        .exit_modal{ 
+            display: flex; 
+            justify-content: end;  
+            padding: 10px 10px 0 0; 
+            span{ 
+                cursor: pointer; 
+                font-size: 23px;  
+            }
+
+        } 
+        .modal_top{ 
+            display: flex; 
+            justify-content: space-between;  
+            padding-top: 10px;  
+            align-items: center;
+            div{ 
+                display: flex;
+                gap: 20px;
+                font-size: 30px; 
+                font-weight: 700;
+            } 
+            p{ 
+                padding-right: 40px; 
+                font-size: 24px;
+            }
+        } 
+        .modal_bottom{ 
+            display: flex;  
+            padding-top: 30px; 
+            gap: 40px; 
+            font-size: 18px; 
+            font-weight: 300;
+            div{ 
+                width: 20%; 
+                height: 50vh; 
+                img{ 
+                    width: 100%;
+                    height: 100%; 
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,158 @@
+section{ 
+    height: 130vh;
+    background-color: #FDFCF3; 
+    overflow: hidden;
+}
+
+.mainTodo{
+    padding-top: 44px;
+    display: flex;
+    gap: 2%;
+    .mainTodo_left{
+        width: 49%;
+        input{
+            width: 99%;
+            height: 60px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding-left: 16px; 
+            height: 60px;
+        }
+        div{
+            display: flex;
+            gap: 16px;
+            margin: 16px 0 16px 0;
+            select{ 
+                height: 60px;
+                width: 100px;
+                border: none; 
+                border-radius: 12px; 
+                background-color: #FFFF;
+            }
+            input{
+                width: 210px;
+                height: 60px;
+            }
+            input::-webkit-input-placeholder{
+                position: absolute;
+                top: 20px;
+                left: 16px;
+                bottom: 19px;
+            }
+        }
+        .mainTodo_left_description{
+            input{
+                height: 300px;
+                width: 99%; 
+            
+            }
+        }
+        .mainTodo_left_btn{
+            display: flex;
+            justify-content: end;
+            button{
+                width: 174px;
+                height: 40px;
+                background: linear-gradient(135deg, #61B15A 0%, #ADCE74 100%);
+                border-radius: 12px;
+                border: none;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 17px;
+                font-weight: 500;
+                font-size: 16px;
+                color: white;
+            }
+        }
+    
+    }
+    .mainTodo_right{
+        width: 49%;
+        .mainTodo_search{
+            display: flex;
+            input{
+                width: 88%;
+                height: 60px;
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                cursor: pointer;
+                width: 60px;
+                height: 60px;
+                background-color: #FFF76A;
+                border-radius: 12px;
+                margin-left: 10px;
+            }
+        } 
+        .images{ 
+            display: grid; 
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 219px 219px 219px 219px ;
+           margin-top: 29px;   
+           .image{ 
+            border-radius: 12px; 
+            cursor: pointer; 
+            position: relative;
+        
+                img{ 
+                    border-radius: 12px; 
+                    cursor: pointer; 
+                width: 100%; 
+                    height: 100%;
+                } 
+          
+           
+           .imgActive{ 
+            width: 60px; 
+            height: 60px;
+            border-radius: 30px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            background: rgba(255, 255, 255, 0.7); 
+            position: absolute; 
+            left: 50%; 
+            top: 50%; 
+            transform: translate(-50%, -50%) ;  
+            transition: 0,5s;
+           } 
+           .imgNotActive{ 
+            display: none; 
+    
+           } 
+        }
+                .image:nth-child(1){ 
+                    grid-row-start: 1; 
+                    grid-row-end: 3; 
+                    margin: 0 14px 13px 0;
+                }  
+                .image:nth-child(2){ 
+                    margin-bottom: 12px;
+                }  
+                .image:nth-child(3){ 
+    
+                    margin-bottom: 6px;
+
+                } 
+                .image:nth-child(4){ 
+                    grid-row-start:3 ; 
+                    grid-row-end: 5 ; 
+                    margin-right: 16px;
+                } 
+                .image:nth-child(5){ 
+                    grid-row-start:3 ; 
+                    grid-row-end: 5 ; 
+                    margin-bottom: 5px;
+                }
+            } 
+        }
+            
+        
+    
+
+}
